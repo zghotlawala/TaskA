@@ -1,10 +1,10 @@
 //
-//  AppDelegate.h
+//  SimDetials.h
 //  TaskA
 //
-//  Created by Zahur Ghotlawala on 3/14/14.
-//The MIT License (MIT)
-//Copyright (c) 2014 Zahur Ghotlawala
+//  Created by Zahur Ghotlawala on 3/15/14.
+//  The MIT License (MIT)
+//  Copyright (c) 2014 Zahur Ghotlawala
 //
 //Permission is hereby granted, free of charge, to any person obtaining a copy
 //of this software and associated documentation files (the "Software"), to deal
@@ -24,9 +24,15 @@
 //OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //THE SOFTWARE.
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-@property (strong, nonatomic) UIWindow *window;
+@interface SimDetials : NSObject
+{
+    NSString *stored_carrierName;
+    NSString *stored_isoCode;
+    NSString *stored_countryCode;
+    NSString *stored_networkCode;
+}
 
+-(void)checkForChangeInSimInformation;
 @end
